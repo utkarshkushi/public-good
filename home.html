@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <title>Move Resources</title>
+    <style>
+        body{
+            background: url('./assests/Landing\ Page\ \(1\).png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    margin: 0 0;
+    margin-bottom: 0;
+        }
+        .move-logo{
+            width: 50px;
+            height: 60px;
+        }
+        
+        .logo{
+            margin : 10px 20px;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            border-bottom: 0.3px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .nav-links{
+            display: flex;
+            align-items: center;
+            margin : 10px 20px;
+            margin-right: 10px;
+        }
+        .nav-link{
+            font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 80px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    padding: 10px 15px;
+        }
+
+        .nav-link:hover{
+            /* background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            border: 0.3px solid rgba(255, 255, 255, 0.2); */
+            color: #706DFF;
+
+        }
+
+        a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.main{
+    margin: 100px 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-text-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+.main-text-box{
+    /* display: flex;
+    flex-direction: column; */
+    background: linear-gradient(92.8deg, rgba(247, 247, 247, 0.08) 20.74%, rgba(247, 247, 247, 0) 121.29%);
+border: 1px solid rgba(255, 255, 255, 0.2);
+box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(9px);
+padding: 10px 10px;
+border-radius: 16px;
+width: 420px;
+padding-top: 20px;
+}
+.aptos-logo{
+    width: 180px;
+    height: 45px;
+    
+    display: block;
+    margin: auto;
+}
+
+.main-logo{
+    width: 440px;
+    height: 400px;
+
+}
+.text-box-head-text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+/* line-height: 75px; */
+text-align: center;
+letter-spacing: 0.07em;
+color: #FFFFFF;
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+.text-box-sub-text{
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+letter-spacing: 0.07em;
+color: #FFFFFF;
+}
+
+.cards-section{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 50px 50px;
+}
+.card{
+    padding: 10px 20px;
+    width: 350px;
+    height: 310px;
+    margin-top: 100px;
+    margin-right: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(112.78deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 99.96%);
+filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.05));
+backdrop-filter: blur(2px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 16px;
+transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.card:hover{
+    box-shadow: 12px 12px 24px #1E1E1E;
+}
+
+.card-img{
+    display: block;
+    margin: auto;
+    position: relative;
+    bottom: 50px;
+    height: 100px;
+    width: 100px;
+}
+.card-head-text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 45px;
+text-align: center;
+letter-spacing: 0.12em;
+margin: 10px 0;
+color: #FFFFFF;
+position: relative;
+bottom: 60px;
+height: 90px;
+}
+.card-sub-text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.15em;
+margin: 10px 0;
+color: #FFFFFF;
+position: relative;
+bottom: 50px;
+}
+.card-link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 8px 0;
+    background: #2A3136;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 40px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.card-link:hover{
+    background: white;
+    color: black;
+}
+
+
+#docs-section{
+    display: none;
+}
+#Learn-by-code-section{
+    display: none;
+}
+#set-up-environment-section{
+    display: none;
+}
+#tools-section{
+    display: none;
+}
+#tutorial-section{
+    display: none;
+}
+
+.doc-card-img{
+    display: block;
+    margin: auto;
+    
+}
+.doc-card-head-text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 45px;
+text-align: center;
+letter-spacing: 0.12em;
+margin: 10px 0;
+color: #FFFFFF;
+height: 40px;
+}
+
+.doc-card-sub-text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.15em;
+margin: 10px 0;
+color: #FFFFFF;
+height: 130px;
+
+}
+.doc-card-link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 8px 0;
+    background: #2A3136;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+.doc-card-link:hover{
+    background: white;
+    color: black;
+}
+.doc-card-img-container{
+    height: 100px;
+}
+
+.doc-card{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(112.78deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 99.96%);
+filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.05));
+backdrop-filter: blur(2px);
+border-radius: 16px;
+padding: 10px 20px;
+width: 300px;
+height: 350px;
+margin-right: 20px;
+margin-top: 50px;
+transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.doc-card:hover{
+    box-shadow: 12px 12px 24px #1E1E1E;
+}
+
+.doc-cards-section{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin: 50px 300px;
+    /* margin: auto; */
+}
+
+.github-logo{
+    width: 80px;
+    height: 80px;
+}
+
+.learn-by-code-logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.se-by-code-logo-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.se-card-img{
+    width: 200px;
+    height: 60px;
+}
+.aptools{
+    width: 200px;
+    height: 20px;
+}
+.overmind{
+    width: 250px;
+}
+
+.footer{
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8464635854341737) 40%);
+width: 100%;
+/* padding: 10px 30px; */
+}
+
+.footer-display-div{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 10px 30px;
+}
+.info-side{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+.follow-us-imgs{
+    display: flex;
+}
+
+.footer-logo{
+    height: 45px; 
+    width: 40px;
+}
+.follow-us-img{
+    margin-right: 20px;
+    cursor: pointer;
+    width: 25px ;
+    height: 25px;
+}
+
+.move-side-text{
+    font-family: 'Quicksand';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 26px;
+/* or 170% */
+
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+position: relative;
+bottom: 5px;
+margin-left: 10px;
+}
+
+.useful-links-text{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 26px;
+/* or 170% */
+
+text-align: left;
+letter-spacing: 0.065em;
+margin: 0 0;
+color: #FFFFFF;
+cursor: pointer;
+}
+
+.useful-links-head-text{
+    margin-bottom: 30px;
+}
+
+.useful-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-side-box{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.move-side{
+    display: flex;
+}
+
+.footer{
+    margin-top: 200px;
+}
+
+.footer-para{
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 62px;
+    text-align: center;
+    background: linear-gradient(180deg, #706DFF 0%, rgba(236, 122, 224, 0.81) 20.31%, #15BFFD 58.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer-terms{
+    text-align: center;
+    
+    
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    
+
+    margin-bottom: 0;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+
+    opacity: 0.5;
+}
+
+.code-card-sub-text{
+    height: 100px;
+}
+
+.env-card-head-text{
+    height: 80px;
+}
+
+.env-card{
+    height: 380px;
+}
+
+.code-cards-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* box-shadow: 12px 12px 24px #1E1E1E; */
+
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="./assests/logo-min 3.png" class="move-logo" alt="">
+        </div>
+        <div class="nav-links">
+            <a href="" class="nav-link" id="home">Home</a>
+            <a href="" class="nav-link" id="docs">Docs</a>
+            <a href="" class="nav-link" id="tuts">Tutorials</a>
+            <a href="" class="nav-link" id="code">Learn By Code</a>
+            <a href="" class="nav-link" id="env">Set Up Environment</a>
+            <a href="" class="nav-link" id="tools">Tools</a>
+        </div>
+    </nav>
+
+    <section  id="home-section">
+        <section class="main">
+            <div class="main-text-area">
+                <div class="main-text-box">
+                    <img src="./assests/Aptos_Primary_WHT 3.png" class="aptos-logo" alt="">
+                    <h1 class="text-box-head-text">Move Developer Resources</h1>
+                    <h1 class="text-box-sub-text">A guide to Aptos & Move Language 
+                        by Move Developers DAO.
+                        </h1>
+                </div>
+            </div>
+            <div class="main-img-box">
+                <img src="./assests/Other 07.png" class="main-img" alt="">
+            </div>
+        </section>
+    
+        <section class="cards-section">
+            <div class="card">
+                <img src="./assests/Camera angle 02 1.png" class="card-img" alt="">
+                <h1 class="card-head-text">Learn Move On Aptos</h1>
+                <h1 class="card-sub-text">Check the core #MoveLang 
+                    concepts on official docs</h1>
+                <h1 class="card-link" id="docs-btn">Learn</h1>
+            </div>
+            <div class="card">
+                <img src="./assests/3.png" class="card-img" alt="">
+                <h1 class="card-head-text">Explore Tutorials</h1>
+                <h1 class="card-sub-text">Curated list of various 
+                    tutorials by contributors</h1>
+                <h1 class="card-link" id="tuts-btn">Explore Tutorials</h1>
+            </div>
+            <div class="card">
+                <img src="./assests/designed laptop.png" class="card-img designed-laptop" alt="">
+                <h1 class="card-head-text">Play with code</h1>
+                <h1 class="card-sub-text">Learn using hands on
+                    interactive quests, playground
+                   </h1>
+                <h1 class="card-link" id="code-btn">Play With Code</h1>
+            </div>
+            <div class="card">
+                <img src="./assests/Other 17.png" class="card-img" alt="">
+                <h1 class="card-head-text">Setup environment</h1>
+                <h1 class="card-sub-text">Configure your 
+                    development environment.</h1>
+                <h1 class="card-link" id="env-btn">Set Up</h1>
+            </div>
+            <div class="card">
+                <img src="./assests/5 (1).png" class="card-img" alt="">
+                <h1 class="card-head-text">Tools</h1>
+                <h1 class="card-sub-text">Check various API, 
+                    SDKs available for developers.</h1>
+                <h1 class="card-link" id="tools-btn">Tools</h1>
+            </div>
+        </section>
+    </section>
+
+    <section id="docs-section">
+        <div class="section-description">
+            <h1 class="sec-desc-head-text">APTOS DEVELOPMENT DOCUMENTATIONS</h1>
+            <h1 class="sec-desc-sub-text">Welcome to the documentation section, go through these all in one guides for starting your Move Language journey.</h1>
+            
+        </div>
+        <section class="doc-cards-section">
+            <div class="doc-card">
+                <div class="doc-card-img-container">
+                    <img src="./assests/aptos.png" class="doc-card-img" alt="">
+                </div>
+                <h1 class="doc-card-head-text">Aptos Docs</h1>
+                <h1 class="doc-card-sub-text">Learn Move using official Aptos documentation</h1>
+                <h1 class="doc-card-link" onclick="openLink('https://aptos.dev/')">Aptos Docs</h1>
+            </div>
+            <div class="doc-card">
+                <div class="doc-card-img-container">
+                    <img src="./assests/github-logo.png" class="doc-card-img github-logo" alt="">
+                </div>
+                <h1 class="doc-card-head-text">Move By Example</h1>
+                <h1 class="doc-card-sub-text">A complimentary Move resource (similar to solidity by example) with concepts, applications, hacks and more by Move Developers DAO </h1>
+                <h1 class="doc-card-link" onclick="openLink('https://github.com/movedevelopersdao/Aptos-Move-by-Example')">Move By Example</h1>
+            </div>
+            <div class="doc-card">
+                <div class="doc-card-img-container">
+                    <img src="./assests/github-logo.png" class="doc-card-img github-logo" alt="">
+                </div>
+                <h1 class="doc-card-head-text">Move Book</h1>
+                <h1 class="doc-card-sub-text">The first Move Language Book by Diem with all concepts</h1>
+                <h1 class="doc-card-link" onclick="openLink('https://move-book.com/')">Move Book</h1>
+            </div>
+           
+            
+            
+            
+        </section>
+    </section>
+
+    <section id="Learn-by-code-section">
+        <div class="section-description">
+            <h1 class="sec-desc-head-text">LEARN WITH CODING</h1>
+            <h1 class="sec-desc-sub-text">These platforms will help you experiment with Aptos if you prefer a more interactive learning experience.</h1>
+            
+        </div>
+        <section class="doc-cards-section code-cards-section">
+            <div class="doc-card">
+                <div class="doc-card-img-container learn-by-code-logo-box">
+                    <img src="./assests/imcoding 1.png" class="doc-card-img" alt="">
+                </div>
+                <h1 class="doc-card-head-text">IMCoding Online</h1>
+                <h1 class="doc-card-sub-text code-card-sub-text">Move Language interactive tutorials (Cryptozombies for Move)</h1>
+                <h1 class="doc-card-link" onclick="openLink('https://imcoding.online/')">IMCoding</h1>
+            </div>
+            <div class="doc-card">
+                <div class="doc-card-img-container se-by-code-logo-box">
+                    <img src="./assests/overmind.png" class="se-card-img overmind" alt="">
+                </div>
+                <h1 class="doc-card-head-text">OverMind</h1>
+                <h1 class="doc-card-sub-text code-card-sub-text">Learn to Earn Move quests and on chain resume with SBTss</h1>
+                <h1 class="doc-card-link" onclick="openLink('https://overmind.xyz/')">OverMind</h1>
+            </div>
+            
+            
+            
+        </section>
+    </section>
+
+    <section id="set-up-environment-section">
+        <div class="section-description">
+            <h1 class="sec-desc-head-text">SET UP ENVIRONMENT</h1>
+            <h1 class="sec-desc-sub-text"> Start building smart contracts on Move in a hassle free way using these online IDEs.</h1>
+        </div>
+        <section class="doc-cards-section">
+            <div class="doc-card env-card">
+                <div class="doc-card-img-container learn-by-code-logo-box">
+                    <img src="./assests/move playground.png" class="doc-card-img" alt="">
+                </div>
+                <h1 class="doc-card-head-text env-card-head-text">Move Playground</h1>
+                <h1 class="doc-card-sub-text code-card-sub-text">Online IDE for building and testing smart contracts in browsers.</h1>
+                <h1 class="doc-card-link" onclick="openLink('https://playground.pontem.network/')">Enter</h1>
+            </div>
+            <!-- <div class="doc-card">
+                <div class="doc-card-img-container learn-by-code-logo-box">
+                    <img src="./assests/aptos.png" class="doc-card-img github-logo" alt="">
+                </div>
+                <h1 class="doc-card-head-text">Remix Plugin</h1>
+                
+                <h1 class="doc-card-link" onclick="openLink('https://aptos.dev/community/contributions/remix-ide-plugin')">Enter</h1>
+            </div> -->
+            <div class="doc-card env-card">
+                <div class="doc-card-img-container se-by-code-logo-box">
+                    <img src="./assests/chain ide.png" class="se-card-img github-logo" alt="">
+                </div>
+                <h1 class="doc-card-head-text env-card-head-text">Chain IDE</h1>
+                <h1 class="doc-card-sub-text code-card-sub-text">Cloud based Multi-Chain IDE </h1>
+                <h1 class="doc-card-link" onclick="openLink('https://chainide.com/')">Enter</h1>
+            </div>
+            <div class="doc-card env-card">
+                <div class="doc-card-img-container se-by-code-logo-box">
+                    <img src="./assests/welldone developer.png" class="se-card-img github-logo" alt="">
+                </div>
+                <h1 class="doc-card-head-text env-card-head-text">WellDone Remix Plugin</h1>
+                <h1 class="doc-card-sub-text code-card-sub-text">Deploy and run Move smart contracts on Remix IDE using Welldone plugin.</h1>
+                <h1 class="doc-card-link" onclick="openLink('https://docs.welldonestudio.io/code/deploy-and-run/aptos')">Enter</h1>
+            </div>
+            
+            
+            
+        </section>
+    </section>
+
+    <section id="tools-section">
+        <div class="section-description">
+            <h1 class="sec-desc-head-text">APTOS DEVELOPMENT TOOLS</h1>
+            <h1 class="sec-desc-sub-text"> Take your Aptos journey to the next level using these tools.</h1>
+            </div>
+        <section class="doc-cards-section">
+            <div class="doc-card">
+                <div class="doc-card-img-container">
+                    <img src="./assests/aptos.png" class="doc-card-img" alt="">
+                </div>
+                <h1 class="doc-card-head-text">Aptos Explorer</h1>
+                <h1 class="doc-card-sub-text">Aptos chain explorer.</h1>
+                <h1 class="doc-card-link" onclick="openLink('https://explorer.aptoslabs.com/?network=mainnet')">Enter</h1>
+            </div>
+            <div class="doc-card">
+                <div class="doc-card-img-container se-by-code-logo-box">
+                    <img src="./assests/aptools.png" class="se-card-img github-logo aptools" alt="">
+                </div>
+                <h1 class="doc-card-head-text">Aptools</h1>
+                <h1 class="doc-card-sub-text">Chain analytics for Aptos.</h1>
+                <h1 class="doc-card-link" onclick="openLink('https://aptools.io/')">Enter</h1>
+            </div>
+            <div class="doc-card">
+                <div class="doc-card-img-container">
+                    <img src="./assests/aptos.png" class="doc-card-img github-logo" alt="">
+                </div>
+                <h1 class="doc-card-head-text">Aptos CLI</h1>
+                <h1 class="doc-card-sub-text">This tool is a command line interface (CLI) for developing on the Aptos blockchain, debugging, and for node operations.</h1>
+                <h1 class="doc-card-link" onclick="openLink('https://aptos.dev/tools/aptos-cli-tool/use-aptos-cli')">Enter</h1>
+            </div>
+            <div class="doc-card">
+                <div class="doc-card-img-container">
+                    <img src="./assests/aptos.png" class="doc-card-img github-logo" alt="">
+                </div>
+                <h1 class="doc-card-head-text">Aptos SDKs</h1>
+                <h1 class="doc-card-sub-text"> Rust, Python, Typescript, Unity SDKs for development on Aptos</h1>
+                <h1 class="doc-card-link" onclick="openLink('https://aptos.dev/sdks/index')">Enter</h1>
+            </div>
+            <div class="doc-card">
+                <div class="doc-card-img-container se-by-code-logo-box">
+                    <img src="./assests/blast api.png" class="doc-card-img" alt="">
+                </div>
+                <h1 class="doc-card-head-text">Blast API</h1>
+                <h1 class="doc-card-sub-text"> Infrastructure and APIs for Aptos by Bware labs</h1>
+                <h1 class="doc-card-link" onclick="openLink('https://blastapi.io/')">Enter</h1>
+            </div>
+            <!-- <div class="doc-card">
+                <div class="doc-card-img-container">
+                    <img src="./assests/aptos.png" class="doc-card-img github-logo" alt="">
+                </div>
+                <h1 class="doc-card-head-text">Rest API</h1>
+                
+                <h1 class="doc-card-link" onclick="openLink('https://aptos.dev/nodes/aptos-api-spec/#/')">Enter</h1>
+            </div> -->
+            <div class="doc-card">
+                <div class="doc-card-img-container">
+                    <img src="./assests/moralis" class="doc-card-img github-logo" alt="">
+                </div>
+                <h1 class="doc-card-head-text">Moralis SDKs</h1>
+                <h1 class="doc-card-sub-text">Infrastructure and APIs for Aptos by Moralis</h1>
+                <h1 class="doc-card-link" onclick="openLink('https://moralis.io/chains/aptos/')">Enter</h1>
+            </div>
+            
+            
+        </section>
+    </section>
+
+    <section id="tutorial-section">
+        <div class="section-description">
+            <h1 class="sec-desc-head-text">APTOS DEVELOPMENT TUTORIALS</h1>
+            <h1 class="sec-desc-sub-text">Welcome to our curated list of community tutorials.</h1>
+            <div class="link-box"><h1 class="sec-desc-link-text">Submit a tutorial</h1></div>
+        </div>
+
+        <div class="tuts-display">
+            <div onclick="openLink('https://medium.com/mokshyaprotocol/write-your-first-smart-contract-on-aptos-a-step-by-step-guide-e16a6f5c2be6')" class="tut-display-card first-tut-card">
+                <h1 class="tut-card-head-text">Mokshya Protocol Beginner Guide</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">Samundra Karki</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">Feb 27</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">8 Min</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">A step by step guide to write your first smart contract in Move
+                </h1>
+            </div>
+            <div onclick="openLink('https://medium.com/code-community-command')" class="tut-display-card">
+                <h1 class="tut-card-head-text">Wayne Culbreth Aptos Tutorial </h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">Wayne Culbreth</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">May 31</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">11 Min</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Aptos tutorials in a concise article
+                </h1>
+            </div>
+            <div onclick="openLink('https://github.com/zellic/move-prover-examples')" class="tut-display-card">
+                <h1 class="tut-card-head-text">Zellic Move Prover Tutorial</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">A step by step Move Prover guide from installation to examples
+
+                </h1>
+            </div>
+            <div onclick="openLink('https://medium.com/aptoslabs/block-stm-how-we-execute-over-160k-transactions-per-second-on-the-aptos-blockchain-3b003657e4bas')" class="tut-display-card">
+                <h1 class="tut-card-head-text">Aptos Labs’ Block-STM Article</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">Aptos</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">April 13</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">9 Min</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Learn more about BlockSTM and parallel processing from Aptos
+                </h1>
+            </div>
+            <div onclick="openLink('https://jacobadevore.medium.com/revolutionize-your-aptos-smart-contract-1a855c5cae7a')" class="tut-display-card">
+                <h1 class="tut-card-head-text">Smart contract tutorial by Jacob Devore </h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">Jacob Devore</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">April 21</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">4 Min</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Revolutionize smart contract using view functions.
+                </h1>
+            </div>
+            <div onclick="openLink('https://github.com/aptos-labs/aptos-core/tree/main/aptos-move/move-examples')" class="tut-display-card">
+                <h1 class="tut-card-head-text">Aptos Examples</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Aptos Examples
+                </h1>
+            </div>
+            <div onclick="openLink('https://aptos.dev/tutorials/')" class="tut-display-card"><h1 class="tut-card-head-text">Onboarding Examples</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Onboarding Aptos and Move Language tutorials for newbies
+                </h1></div>
+            <div onclick="openLink('https://github.com/MystenLabs/awesome-move')" class="tut-display-card">
+                <h1 class="tut-card-head-text">Awesome Moves</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">An all in one guide to all Move Language resources, information, communities, podcasts, tools and more.
+                </h1>
+            </div>
+            <div onclick="openLink('https://github.com/econia-labs/teach-yourself-move')" class="tut-display-card">
+                <h1 class="tut-card-head-text">Teach Yourself Move</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Move Language resources and roadmap maintained by Econia Labs team.
+                </h1>
+            </div>
+            <div onclick="openLink('https://www.pentagon.xyz/')" class="tut-display-card">
+                <h1 class="tut-card-head-text">Pentagon</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Open sources examples and libraries maintained by Pentagon team
+                </h1>
+            </div>
+            <div onclick="openLink('https://aptos.dev/reference/glossary')" class="tut-display-card">
+                <h1 class="tut-card-head-text">Aptos Glossary</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Glossary of all keywords in Aptos.
+                </h1>
+            </div>
+            <div onclick="openLink('http://www.aptoseden.com/')" class="tut-display-card">
+                <h1 class="tut-card-head-text">Video Tutorials By Aptos Eden</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Move language video tutorials in chinese.
+                </h1>
+            </div>
+            <div onclick="openLink('https://osec.io/blog/2022-09-06-move-introduction/')" class="tut-display-card">
+                <h1 class="tut-card-head-text">Move Introduction By Otter Sec</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">Robert Chen</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">Sep 6</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Brief introduction to Move language by OtterSec
+                </h1>
+            </div>
+            <div onclick="openLink('https://www.movebit.xyz/blog/post/move-prover-tutorial-part-1.html')" class="tut-display-card">
+                <h1 class="tut-card-head-text">MoveBit Move Prover Tutorial</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">Xudong Wang & 0xyi</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">Sep 27</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Move Prover tutorial by MoveBit
+                </h1>
+            </div>
+            <div onclick="openLink('https://www.zellic.io/blog/move-fast-and-break-things-pt-1')" class="tut-display-card">
+                <h1 class="tut-card-head-text">Move Fast and Break Things by Zellic</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">Samundra Karki</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">Samundra Karki</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">Samundra Karki</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Blog on Aptos security and possible hacks
+                </h1>
+            </div>
+            <div onclick="openLink('https://www.zellic.io/blog/top-10-aptos-move-bugs')" class="tut-display-card last-tut-card">
+                <h1 class="tut-card-head-text">Aptos Move Language hacks</h1>
+                <div class="tut-card-details">
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Writing Hand Light Skin Tone.png" class="tut-card-detail-img hand-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Calendar.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                    <div class="tut-card-detail">
+                        <div class="tut-card-detail-img-box">
+                            <img src="./assests/Alarm Clock.png" class="tut-card-detail-img" alt="hand">
+                        </div>
+                        <h1 class="tut-card-detail-text">-</h1>
+                    </div>
+                </div>
+                <h1 class="tut-card-sub-text">Top 10 Move language possible bugs on Aptos.
+                </h1>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="footer-section">
+        <p class="footer-para">BUILD WITH US</p>
+        <div  class="footer-display-div">
+            
+            <div class="move-side">
+                <img  class="footer-logo" src="./assests/logo-min 3.png" alt="">
+                <p class="move-side-text">Move Developers DAO</p>
+            </div>
+            <div class="info-side">
+                <div class="usefull-links-side info-side-box">
+                    <p class="useful-links-head-text useful-links-text">Useful Links</p>
+                <div class="useful-links">
+                    <p onclick="openInteractiveMoveCourse()" class="useful-links-text">GitBook</p>
+                    <p class="useful-links-text">Jobs</p>
+                    <p onclick="openGitHub()" class="useful-links-text">GitHub</p>
+                </div>
+                </div>
+                <div class="follow-us info-side-box">
+                    <p class="useful-links-head-text useful-links-text">Follow Us</p>
+                    <div class="follow-us-imgs">
+                        <img  onclick="openLinkedin()" class="follow-us-img" src="./assests/linkedin.png" alt="">
+                        <img  onclick="openTwitter()" class="follow-us-img" src="./assests/twitter.png" alt="">
+                        <img  onclick="openDiscord()" class="follow-us-img" src="./assests/discord.png" alt="">
+                        <img  onclick="openGitHub()" class="follow-us-img" src="./assests/github-logo.png" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <p class="footer-terms">&#174 2022 All Rights Reserved Terms of Services</p>
+
+    </footer>
+    
+
+
+<script>
+    let homeDisplay = true;
+    let docsDisplay = false;
+    let codeDisplay = false;
+    let envDisplay = false;
+    let toolsDisplay = false;
+    let home = document.getElementById('home');
+    let docs = document.getElementById('docs');
+    let tuts = document.getElementById('tuts');
+    let code = document.getElementById('code');
+    let env = document.getElementById('env');
+    let tools = document.getElementById('tools');
+    home.style.color = '#706DFF';
+    let homeSection = document.getElementById('home-section');
+    let docsSection = document.getElementById('docs-section');
+    let codeSection = document.getElementById('Learn-by-code-section');
+    let tutsSection = document.getElementById('tutorial-section');
+    let envSection = document.getElementById('set-up-environment-section');
+    let toolsSection = document.getElementById('tools-section');
+    let footerSection = document.getElementById('footer-section');
+    home.addEventListener('click', ()=>{
+        event.preventDefault();
+        home.style.color = '#706DFF';
+        docs.style.color = 'white';
+        code.style.color = 'white';
+        env.style.color = 'white';
+        tools.style.color = 'white';
+        tuts.style.color = 'white';
+        homeSection.style.display = '';
+        docsSection.style.display = 'none';
+        tutsSection.style.display = 'none'
+        codeSection.style.display = 'none';
+        envSection.style.display = 'none';
+        toolsSection.style.display = 'none';
+        footerSection.style.display = '';
+    })
+    docs.addEventListener('click', ()=>{
+        event.preventDefault();
+        home.style.color = 'white';
+        docs.style.color = '#706DFF';
+        code.style.color = 'white';
+        env.style.color = 'white';
+        tools.style.color = 'white';
+        tuts.style.color = 'white';
+        homeSection.style.display = 'none';
+        docsSection.style.display = 'block';
+        tutsSection.style.display = 'none'
+        codeSection.style.display = 'none';
+        envSection.style.display = 'none';
+        toolsSection.style.display = 'none';
+        footerSection.style.display = 'none';
+    })
+    code.addEventListener('click', ()=>{
+        event.preventDefault();
+        home.style.color = 'white';
+        docs.style.color = 'white';
+        code.style.color = '#706DFF';
+        env.style.color = 'white';
+        tools.style.color = 'white';
+        tuts.style.color = 'white';
+        homeSection.style.display = 'none';
+        docsSection.style.display = 'none';
+        tutsSection.style.display = 'none'
+        codeSection.style.display = 'block';
+        envSection.style.display = 'none';
+        toolsSection.style.display = 'none';
+        footerSection.style.display = 'none';
+    })
+    env.addEventListener('click', ()=>{
+        event.preventDefault();
+        home.style.color = 'white';
+        docs.style.color = 'white';
+        code.style.color = 'white';
+        env.style.color = '#706DFF';
+        tools.style.color = 'white';
+        tuts.style.color = 'white';
+        homeSection.style.display = 'none';
+        docsSection.style.display = 'none';
+        tutsSection.style.display = 'none'
+        codeSection.style.display = 'none';
+        envSection.style.display = 'block';
+        toolsSection.style.display = 'none';
+        footerSection.style.display = 'none';
+    })
+    tools.addEventListener('click', ()=>{
+        event.preventDefault();
+        home.style.color = 'white';
+        docs.style.color = 'white';
+        code.style.color = 'white';
+        env.style.color = 'white';
+        tools.style.color = '#706DFF';
+        tuts.style.color = 'white';
+        homeSection.style.display = 'none';
+        docsSection.style.display = 'none';
+        tutsSection.style.display = 'none'
+        codeSection.style.display = 'none';
+        envSection.style.display = 'none';
+        toolsSection.style.display = 'block';
+        footerSection.style.display = 'none';
+    })
+
+    tuts.addEventListener('click', ()=>{
+        event.preventDefault();
+        home.style.color = 'white';
+        docs.style.color = 'white';
+        code.style.color = 'white';
+        env.style.color = 'white';
+        tools.style.color = 'white';
+        tuts.style.color = '#706DFF';
+        homeSection.style.display = 'none';
+        docsSection.style.display = 'none';
+        tutsSection.style.display = 'block'
+        codeSection.style.display = 'none';
+        envSection.style.display = 'none';
+        toolsSection.style.display = 'none';
+        footerSection.style.display = 'none';
+
+    })
+
+
+    let docsBtn = document.getElementById('docs-btn');
+    let tutsBtn = document.getElementById('tuts-btn');
+    let codeBtn = document.getElementById('code-btn');
+    let envBtn = document.getElementById('env-btn');
+    let toolsBtn = document.getElementById('tools-btn');
+
+    docsBtn.addEventListener('click',()=>{
+        home.style.color = 'white';
+        docs.style.color = '#706DFF';
+        code.style.color = 'white';
+        env.style.color = 'white';
+        tools.style.color = 'white';
+        homeSection.style.display = 'none';
+        docsSection.style.display = 'block';
+        tutsSection.style.display = 'none'
+        codeSection.style.display = 'none';
+        envSection.style.display = 'none';
+        toolsSection.style.display = 'none';
+        footerSection.style.display = 'none';
+    })
+
+    codeBtn.addEventListener('click', ()=>{
+        home.style.color = 'white';
+        docs.style.color = 'white';
+        code.style.color = '#706DFF';
+        env.style.color = 'white';
+        tools.style.color = 'white';
+        homeSection.style.display = 'none';
+        docsSection.style.display = 'none';
+        tutsSection.style.display = 'none'
+        codeSection.style.display = 'block';
+        envSection.style.display = 'none';
+        toolsSection.style.display = 'none';
+        footerSection.style.display = 'none';
+    })
+
+    envBtn.addEventListener('click', ()=>{
+        home.style.color = 'white';
+        docs.style.color = 'white';
+        code.style.color = 'white';
+        env.style.color = '#706DFF';
+        tools.style.color = 'white';
+        homeSection.style.display = 'none';
+        docsSection.style.display = 'none';
+        tutsSection.style.display = 'none'
+        codeSection.style.display = 'none';
+        envSection.style.display = 'block';
+        toolsSection.style.display = 'none';
+        footerSection.style.display = 'none';
+    })
+
+    toolsBtn.addEventListener('click', ()=>{
+        home.style.color = 'white';
+        docs.style.color = 'white';
+        code.style.color = 'white';
+        env.style.color = 'white';
+        tools.style.color = '#706DFF';
+        homeSection.style.display = 'none';
+        docsSection.style.display = 'none';
+        tutsSection.style.display = 'none'
+        codeSection.style.display = 'none';
+        envSection.style.display = 'none';
+        toolsSection.style.display = 'block';
+        footerSection.style.display = 'none';
+    })
+
+    tutsBtn.addEventListener('click', ()=>{
+        home.style.color = 'white';
+        docs.style.color = 'white';
+        code.style.color = 'white';
+        env.style.color = 'white';
+        tools.style.color = 'white';
+        tuts.style.color = '#706DFF';
+        homeSection.style.display = 'none';
+        docsSection.style.display = 'none';
+        tutsSection.style.display = 'block'
+        codeSection.style.display = 'none';
+        envSection.style.display = 'none';
+        toolsSection.style.display = 'none';
+        footerSection.style.display = 'none';
+    })
+
+
+    function openLink(link){
+        window.open(link, '_self');
+    }
+</script>
+
+</body>
+</html>
